@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		650187972D8CCA8400C0CED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6501877D2D8CCA8300C0CED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650187842D8CCA8300C0CED8;
+			remoteInfo = PPOCmatic;
+		};
+		650187A12D8CCA8400C0CED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6501877D2D8CCA8300C0CED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650187842D8CCA8300C0CED8;
+			remoteInfo = PPOCmatic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		650187852D8CCA8300C0CED8 /* PPOCmatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPOCmatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		650187962D8CCA8400C0CED8 /* PPOCmaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPOCmaticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		650187A02D8CCA8400C0CED8 /* PPOCmaticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPOCmaticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		650187872D8CCA8300C0CED8 /* PPOCmatic */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PPOCmatic;
+			sourceTree = "<group>";
+		};
+		650187992D8CCA8400C0CED8 /* PPOCmaticTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PPOCmaticTests;
+			sourceTree = "<group>";
+		};
+		650187A32D8CCA8400C0CED8 /* PPOCmaticUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PPOCmaticUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		650187822D8CCA8300C0CED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650187932D8CCA8400C0CED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6501879D2D8CCA8400C0CED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6501877C2D8CCA8300C0CED8 = {
+			isa = PBXGroup;
+			children = (
+				650187872D8CCA8300C0CED8 /* PPOCmatic */,
+				650187992D8CCA8400C0CED8 /* PPOCmaticTests */,
+				650187A32D8CCA8400C0CED8 /* PPOCmaticUITests */,
+				650187862D8CCA8300C0CED8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		650187862D8CCA8300C0CED8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				650187852D8CCA8300C0CED8 /* PPOCmatic.app */,
+				650187962D8CCA8400C0CED8 /* PPOCmaticTests.xctest */,
+				650187A02D8CCA8400C0CED8 /* PPOCmaticUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		650187842D8CCA8300C0CED8 /* PPOCmatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650187AA2D8CCA8400C0CED8 /* Build configuration list for PBXNativeTarget "PPOCmatic" */;
+			buildPhases = (
+				650187812D8CCA8300C0CED8 /* Sources */,
+				650187822D8CCA8300C0CED8 /* Frameworks */,
+				650187832D8CCA8300C0CED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				650187872D8CCA8300C0CED8 /* PPOCmatic */,
+			);
+			name = PPOCmatic;
+			packageProductDependencies = (
+			);
+			productName = PPOCmatic;
+			productReference = 650187852D8CCA8300C0CED8 /* PPOCmatic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		650187952D8CCA8400C0CED8 /* PPOCmaticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650187AD2D8CCA8400C0CED8 /* Build configuration list for PBXNativeTarget "PPOCmaticTests" */;
+			buildPhases = (
+				650187922D8CCA8400C0CED8 /* Sources */,
+				650187932D8CCA8400C0CED8 /* Frameworks */,
+				650187942D8CCA8400C0CED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				650187982D8CCA8400C0CED8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				650187992D8CCA8400C0CED8 /* PPOCmaticTests */,
+			);
+			name = PPOCmaticTests;
+			packageProductDependencies = (
+			);
+			productName = PPOCmaticTests;
+			productReference = 650187962D8CCA8400C0CED8 /* PPOCmaticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6501879F2D8CCA8400C0CED8 /* PPOCmaticUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650187B02D8CCA8400C0CED8 /* Build configuration list for PBXNativeTarget "PPOCmaticUITests" */;
+			buildPhases = (
+				6501879C2D8CCA8400C0CED8 /* Sources */,
+				6501879D2D8CCA8400C0CED8 /* Frameworks */,
+				6501879E2D8CCA8400C0CED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				650187A22D8CCA8400C0CED8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				650187A32D8CCA8400C0CED8 /* PPOCmaticUITests */,
+			);
+			name = PPOCmaticUITests;
+			packageProductDependencies = (
+			);
+			productName = PPOCmaticUITests;
+			productReference = 650187A02D8CCA8400C0CED8 /* PPOCmaticUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6501877D2D8CCA8300C0CED8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					650187842D8CCA8300C0CED8 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					650187952D8CCA8400C0CED8 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 650187842D8CCA8300C0CED8;
+					};
+					6501879F2D8CCA8400C0CED8 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 650187842D8CCA8300C0CED8;
+					};
+				};
+			};
+			buildConfigurationList = 650187802D8CCA8300C0CED8 /* Build configuration list for PBXProject "PPOCmatic" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6501877C2D8CCA8300C0CED8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 650187862D8CCA8300C0CED8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				650187842D8CCA8300C0CED8 /* PPOCmatic */,
+				650187952D8CCA8400C0CED8 /* PPOCmaticTests */,
+				6501879F2D8CCA8400C0CED8 /* PPOCmaticUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		650187832D8CCA8300C0CED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650187942D8CCA8400C0CED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6501879E2D8CCA8400C0CED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		650187812D8CCA8300C0CED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650187922D8CCA8400C0CED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6501879C2D8CCA8400C0CED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		650187982D8CCA8400C0CED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650187842D8CCA8300C0CED8 /* PPOCmatic */;
+			targetProxy = 650187972D8CCA8400C0CED8 /* PBXContainerItemProxy */;
+		};
+		650187A22D8CCA8400C0CED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650187842D8CCA8300C0CED8 /* PPOCmatic */;
+			targetProxy = 650187A12D8CCA8400C0CED8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		650187A82D8CCA8400C0CED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		650187A92D8CCA8400C0CED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		650187AB2D8CCA8400C0CED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PPOCmatic/PPOCmatic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PPOCmatic/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suzumes.ppocmatic.PPOCmatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		650187AC2D8CCA8400C0CED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PPOCmatic/PPOCmatic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PPOCmatic/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suzumes.ppocmatic.PPOCmatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		650187AE2D8CCA8400C0CED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suzumes.ppocmatic.PPOCmaticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PPOCmatic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PPOCmatic";
+			};
+			name = Debug;
+		};
+		650187AF2D8CCA8400C0CED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suzumes.ppocmatic.PPOCmaticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PPOCmatic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PPOCmatic";
+			};
+			name = Release;
+		};
+		650187B12D8CCA8400C0CED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suzumes.ppocmatic.PPOCmaticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PPOCmatic;
+			};
+			name = Debug;
+		};
+		650187B22D8CCA8400C0CED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suzumes.ppocmatic.PPOCmaticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PPOCmatic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		650187802D8CCA8300C0CED8 /* Build configuration list for PBXProject "PPOCmatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650187A82D8CCA8400C0CED8 /* Debug */,
+				650187A92D8CCA8400C0CED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650187AA2D8CCA8400C0CED8 /* Build configuration list for PBXNativeTarget "PPOCmatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650187AB2D8CCA8400C0CED8 /* Debug */,
+				650187AC2D8CCA8400C0CED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650187AD2D8CCA8400C0CED8 /* Build configuration list for PBXNativeTarget "PPOCmaticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650187AE2D8CCA8400C0CED8 /* Debug */,
+				650187AF2D8CCA8400C0CED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650187B02D8CCA8400C0CED8 /* Build configuration list for PBXNativeTarget "PPOCmaticUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650187B12D8CCA8400C0CED8 /* Debug */,
+				650187B22D8CCA8400C0CED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6501877D2D8CCA8300C0CED8 /* Project object */;
+}
