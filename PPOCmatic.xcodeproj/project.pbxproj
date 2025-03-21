@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6505955C2D8CCB1600DBB0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650595552D8CCB1600DBB0BC /* Assets.xcassets */; };
+		650595622D8CCB1600DBB0BC /* PPOCmaticUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650595602D8CCB1600DBB0BC /* PPOCmaticUITestsLaunchTests.swift */; };
+		650595B92D8CDBB400DBB0BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650595B82D8CDBB400DBB0BC /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		650187972D8CCA8400C0CED8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,22 +33,67 @@
 		650187852D8CCA8300C0CED8 /* PPOCmatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPOCmatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		650187962D8CCA8400C0CED8 /* PPOCmaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPOCmaticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		650187A02D8CCA8400C0CED8 /* PPOCmaticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPOCmaticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		650595552D8CCB1600DBB0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		650595602D8CCB1600DBB0BC /* PPOCmaticUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPOCmaticUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		650595B82D8CDBB400DBB0BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		650595B02D8CD42300DBB0BC /* Exceptions for "Styles" folder in "PPOCmatic" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AestheticButtonStyle.swift,
+				Design.swift,
+				MonthSelectorButtonStyle.swift,
+			);
+			target = 650187842D8CCA8300C0CED8 /* PPOCmatic */;
+		};
+		650595B12D8CD42300DBB0BC /* Exceptions for "Views" folder in "PPOCmatic" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FormularioVoluntario.swift,
+				MonthPickerView.swift,
+			);
+			target = 650187842D8CCA8300C0CED8 /* PPOCmatic */;
+		};
+		650595BE2D8CE11E00DBB0BC /* Exceptions for "Core" folder in "PPOCmatic" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+				PPOCmaticApp.swift,
+			);
+			target = 650187842D8CCA8300C0CED8 /* PPOCmatic */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		650187872D8CCA8300C0CED8 /* PPOCmatic */ = {
+		650595992D8CD42300DBB0BC /* Core */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PPOCmatic;
+			exceptions = (
+				650595BE2D8CE11E00DBB0BC /* Exceptions for "Core" folder in "PPOCmatic" target */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
-		650187992D8CCA8400C0CED8 /* PPOCmaticTests */ = {
+		6505959B2D8CD42300DBB0BC /* Models */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PPOCmaticTests;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		650187A32D8CCA8400C0CED8 /* PPOCmaticUITests */ = {
+		650595A12D8CD42300DBB0BC /* Styles */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PPOCmaticUITests;
+			exceptions = (
+				650595B02D8CD42300DBB0BC /* Exceptions for "Styles" folder in "PPOCmatic" target */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		650595A42D8CD42300DBB0BC /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				650595B12D8CD42300DBB0BC /* Exceptions for "Views" folder in "PPOCmatic" target */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +126,14 @@
 		6501877C2D8CCA8300C0CED8 = {
 			isa = PBXGroup;
 			children = (
-				650187872D8CCA8300C0CED8 /* PPOCmatic */,
-				650187992D8CCA8400C0CED8 /* PPOCmaticTests */,
-				650187A32D8CCA8400C0CED8 /* PPOCmaticUITests */,
+				650595B72D8CDB5F00DBB0BC /* Preview Content */,
+				650595552D8CCB1600DBB0BC /* Assets.xcassets */,
+				650595992D8CD42300DBB0BC /* Core */,
+				6505959B2D8CD42300DBB0BC /* Models */,
+				650595B22D8CD65700DBB0BC /* PPOCmaticUITests */,
 				650187862D8CCA8300C0CED8 /* Products */,
+				650595A12D8CD42300DBB0BC /* Styles */,
+				650595A42D8CD42300DBB0BC /* Views */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +145,22 @@
 				650187A02D8CCA8400C0CED8 /* PPOCmaticUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		650595B22D8CD65700DBB0BC /* PPOCmaticUITests */ = {
+			isa = PBXGroup;
+			children = (
+				650595602D8CCB1600DBB0BC /* PPOCmaticUITestsLaunchTests.swift */,
+			);
+			path = PPOCmaticUITests;
+			sourceTree = "<group>";
+		};
+		650595B72D8CDB5F00DBB0BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				650595B82D8CDBB400DBB0BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +179,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				650187872D8CCA8300C0CED8 /* PPOCmatic */,
+				6505959B2D8CD42300DBB0BC /* Models */,
 			);
 			name = PPOCmatic;
 			packageProductDependencies = (
@@ -130,9 +201,6 @@
 			dependencies = (
 				650187982D8CCA8400C0CED8 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				650187992D8CCA8400C0CED8 /* PPOCmaticTests */,
-			);
 			name = PPOCmaticTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +220,6 @@
 			);
 			dependencies = (
 				650187A22D8CCA8400C0CED8 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				650187A32D8CCA8400C0CED8 /* PPOCmaticUITests */,
 			);
 			name = PPOCmaticUITests;
 			packageProductDependencies = (
@@ -212,6 +277,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650595B92D8CDBB400DBB0BC /* Preview Assets.xcassets in Resources */,
+				6505955C2D8CCB1600DBB0BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650595622D8CCB1600DBB0BC /* PPOCmaticUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,11 +460,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PPOCmatic/PPOCmatic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PPOCmatic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -417,11 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PPOCmatic/PPOCmatic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PPOCmatic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
