@@ -42,9 +42,7 @@
 		650595B02D8CD42300DBB0BC /* Exceptions for "Styles" folder in "PPOCmatic" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				AestheticButtonStyle.swift,
-				Design.swift,
-				MonthSelectorButtonStyle.swift,
+				DesignCode.swift,
 			);
 			target = 650187842D8CCA8300C0CED8 /* PPOCmatic */;
 		};
@@ -61,6 +59,11 @@
 			membershipExceptions = (
 				ContentView.swift,
 				PPOCmaticApp.swift,
+				Sections/MainButtonsSection.swift,
+				Sections/MonthlyShiftListSection.swift,
+				Sections/MonthSelectorSection.swift,
+				Sections/VolunteerListSection.swift,
+				Sections/VolunteerRow.swift,
 			);
 			target = 650187842D8CCA8300C0CED8 /* PPOCmatic */;
 		};

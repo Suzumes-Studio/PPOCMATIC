@@ -10,7 +10,6 @@ struct ContentView: View {
     @State private var monthlyAsignaciones: [TurnoMensual: [Voluntario]] = [:]
     @State private var voluntarioAEditar: Voluntario? = nil
     
-    // Turnos fijos (PPOC) – datos definitivos
     let turnosDisponibles: [DiaTurno] = [
         DiaTurno(dia: "Lunes (10:30 - 12:30)", ubicacion: "Dr. Fedriani", weekday: 2),
         DiaTurno(dia: "Martes (10:30 - 12:30)", ubicacion: "Avd. Cruz Roja", weekday: 3),
@@ -20,12 +19,10 @@ struct ContentView: View {
         DiaTurno(dia: "Viernes (17:30 - 19:30)", ubicacion: "Jardines de Murillo", weekday: 6)
     ]
     
-    // Fondo global de la app: #F9F8F3
     var backgroundColor: Color {
-        return Color(red: 246/255, green: 248/255, blue: 243/255)
+        return DesignCode.backgroundColor
     }
     
-    // Función para formatear la fecha corta
     func formattedDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .short

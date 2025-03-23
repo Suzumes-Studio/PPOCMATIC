@@ -21,15 +21,16 @@ struct MonthPickerView: View {
     var backgroundColor: Color {
         return Color(red: 246/255, green: 170/255, blue: 121/255)
     }
+    
+    // Tamaño del botón (ajusta estos valores según tus necesidades)
+    var buttonWidth: CGFloat = 120
+    var buttonHeight: CGFloat = 30
+    
+    // Colores del botón según los estados
+    var normalColor: Color = Color(red: 246/255, green: 248/255, blue: 243/255) // F6F8F3
+    var pressedOrHoverColor: Color = Color(red: 242/255, green: 178/255, blue: 140/255) // F2B28C
+    var borderColor: Color = Color(red: 246/255, green: 248/255, blue: 243/255) // F6F8F3
 
-    // Color de fondo del botón
-    var buttonBackgroundColor: Color {
-        return Color(red: 246/255, green: 248/255, blue: 243/255)
-    }
-    
-    // Estado para el efecto hover
-    @State private var isHovering: Bool = false
-    
     var body: some View {
         VStack {
             Text("Selecciona Mes")
@@ -54,23 +55,39 @@ struct MonthPickerView: View {
                 }
                 presentationMode.wrappedValue.dismiss()
             }
-            .buttonStyle(PlainButtonStyle())
+            .buttonStyle(MonthPickerButtonStyle(buttonWidth: buttonWidth, buttonHeight: buttonHeight, normalColor: normalColor, pressedOrHoverColor: pressedOrHoverColor, borderColor: borderColor))
             .padding()
-            .background(isHovering ? Color.clear : buttonBackgroundColor) // Color de fondo del botón
-            .foregroundColor(.black) // Color del texto del botón
+        }
+        .frame(width: windowWidth)
+        .frame(maxHeight: .infinity)
+        .background(backgroundColor)
+        .cornerRadius(15)
+        .padding()
+    }
+}
+
+struct MonthPickerButtonStyle: ButtonStyle {
+    var buttonWidth: CGFloat
+    var buttonHeight: CGFloat
+    var normalColor: Color
+    var pressedOrHoverColor: Color
+    var borderColor: Color
+    
+    @State private var isHovering = false
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .frame(width: buttonWidth, height: buttonHeight)
+            .background(configuration.isPressed || isHovering ? pressedOrHoverColor : normalColor)
+            .foregroundColor(.black)
             .cornerRadius(10)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(isHovering ? buttonBackgroundColor : Color.clear, lineWidth: 2) // Borde del botón en hover
+                    .stroke(configuration.isPressed || isHovering ? borderColor : Color.clear, lineWidth: 2)
             )
             .onHover { hovering in
                 isHovering = hovering
             }
-        }
-        .frame(width: windowWidth) // Ajusta el ancho de la ventana aquí
-        .frame(maxHeight: .infinity)
-        .background(backgroundColor) // Color de fondo para toda la vista
-        .cornerRadius(15) // Esquinas redondeadas para toda la vista
-        .padding()
     }
 }
