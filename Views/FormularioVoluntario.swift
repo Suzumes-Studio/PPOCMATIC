@@ -12,6 +12,7 @@ struct FormularioVoluntario: View {
     
     @State private var currentWidth: CGFloat = 500
     @State private var currentHeight: CGFloat = 500
+    @State private var textFieldWidth: CGFloat = 400 // Añadido para definir el ancho del campo de texto
     
     init(voluntarios: Binding<[Voluntario]>, turnosDisponibles: [DiaTurno], editingVolunteer: Binding<Voluntario>? = nil) {
         self._voluntarios = voluntarios
@@ -37,6 +38,7 @@ struct FormularioVoluntario: View {
                     
                     TextField("Nombre", text: $editableVolunteer.nombre)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(width: textFieldWidth) // Definir el ancho del campo de texto
                         .padding()
                     
                     VStack {
@@ -61,7 +63,7 @@ struct FormularioVoluntario: View {
                             ForEach(turnosDisponibles, id: \.self) { turno in
                                 HStack {
                                     Image(systemName: editableVolunteer.disponibilidad.contains(turno) ? "checkmark.square.fill" : "square")
-                                        .foregroundColor(editableVolunteer.disponibilidad.contains(turno) ? Color(red: 198/255, green: 208/255, blue: 199/255) : .gray)
+                                        .foregroundColor(editableVolunteer.disponibilidad.contains(turno) ? Color(red: 123/255, green: 114/255, blue: 105/255) : .gray)
                                         .onTapGesture {
                                             if let index = editableVolunteer.disponibilidad.firstIndex(of: turno) {
                                                 editableVolunteer.disponibilidad.remove(at: index)
@@ -96,7 +98,7 @@ struct FormularioVoluntario: View {
                                 .foregroundColor(Color(red: 123/255, green: 114/255, blue: 105/255))
                                 .padding(8)
                                 .frame(maxWidth: 150)
-                                .background(isHoveringSave ? Color(red: 246/255, green: 248/255, blue: 243/255) : Color(red: 198/255, green: 208/255, blue: 199/255))
+                                .background(isHoveringSave ? Color.clear : Color(red: 246/255, green: 248/255, blue: 243/255))
                         }
                         .buttonStyle(PlainButtonStyle())
                         .cornerRadius(13)
@@ -118,7 +120,7 @@ struct FormularioVoluntario: View {
                                 .foregroundColor(Color(red: 123/255, green: 114/255, blue: 105/255))
                                 .padding(8)
                                 .frame(maxWidth: 150)
-                                .background(isHoveringClose ? Color(red: 246/255, green: 248/255, blue: 243/255) : Color(red: 198/255, green: 208/255, blue: 199/255))
+                                .background(isHoveringClose ? Color.clear : Color(red: 246/255, green: 248/255, blue: 243/255))
                         }
                         .buttonStyle(PlainButtonStyle())
                         .cornerRadius(13)
