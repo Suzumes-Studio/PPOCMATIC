@@ -5,10 +5,20 @@ enum Genero {
     case mujer
 }
 
-struct DiaTurno: Hashable {
+struct DiaTurno: Hashable, Equatable {
     var dia: String
     var ubicacion: String
     var weekday: Int
+
+    static func == (lhs: DiaTurno, rhs: DiaTurno) -> Bool {
+        return lhs.dia == rhs.dia && lhs.ubicacion == rhs.ubicacion && lhs.weekday == rhs.weekday
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(dia)
+        hasher.combine(ubicacion)
+        hasher.combine(weekday)
+    }
 }
 
 struct TurnoMensual: Hashable, Equatable {
