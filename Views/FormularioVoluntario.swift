@@ -21,7 +21,7 @@ struct FormularioVoluntario: View {
         if let editingVolunteer = editingVolunteer {
             _editableVolunteer = State(initialValue: editingVolunteer.wrappedValue)
         } else {
-            _editableVolunteer = State(initialValue: Voluntario(id: UUID(), nombre: "", genero: .varon, disponibilidad: []))
+            _editableVolunteer = State(initialValue: Voluntario(id: UUID(), nombre: "", genero: .varon, disponibilidad: [], numAssignments: 0))
         }
     }
     
@@ -47,8 +47,8 @@ struct FormularioVoluntario: View {
                             .padding(.bottom, 5)
                         
                         Picker("", selection: $editableVolunteer.genero) {
-                            Text(Genero.varon.rawValue).tag(Genero.varon)
-                            Text(Genero.mujer.rawValue).tag(Genero.mujer)
+                            Text("Varón").tag(Genero.varon)
+                            Text("Mujer").tag(Genero.mujer)
                         }
                         .pickerStyle(SegmentedPickerStyle())
                         .padding(.horizontal)

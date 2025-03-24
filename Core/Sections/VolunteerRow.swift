@@ -40,8 +40,8 @@ struct VolunteerRow_Previews: PreviewProvider {
                 nombre: "Juan Perez",
                 genero: .varon,
                 disponibilidad: [],
-                numAssignments: 0,
-                turnoAsignado: nil
+                turnoAsignado: nil,
+                numAssignments: 0
             ),
             voluntarioAEditar: .constant(nil),
             deleteVoluntario: { _ in }
