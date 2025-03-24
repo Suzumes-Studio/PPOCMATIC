@@ -65,11 +65,7 @@ struct FormularioVoluntario: View {
                                     Image(systemName: editableVolunteer.disponibilidad.contains(turno) ? "checkmark.square.fill" : "square")
                                         .foregroundColor(editableVolunteer.disponibilidad.contains(turno) ? Color(red: 123/255, green: 114/255, blue: 105/255) : .gray)
                                         .onTapGesture {
-                                            if let index = editableVolunteer.disponibilidad.firstIndex(of: turno) {
-                                                editableVolunteer.disponibilidad.remove(at: index)
-                                            } else {
-                                                editableVolunteer.disponibilidad.append(turno)
-                                            }
+                                            toggleDisponibilidad(turno: turno)
                                         }
                                     Text("\(turno.dia) - \(turno.ubicacion)")
                                         .padding(.vertical, 2)
@@ -138,5 +134,14 @@ struct FormularioVoluntario: View {
         }
         .padding()
         .frame(minWidth: currentWidth, minHeight: currentHeight)
+    }
+    
+    private func toggleDisponibilidad(turno: DiaTurno) {
+        if let index = editableVolunteer.disponibilidad.firstIndex(of: turno) {
+            editableVolunteer.disponibilidad.remove(at: index)
+        } else {
+            editableVolunteer.disponibilidad.append(turno)
+        }
+        print("Disponibilidad actualizada: \(editableVolunteer.disponibilidad)")
     }
 }
